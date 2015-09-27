@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="css/unsemantic-grid-responsive-tablet.css" type="text/css" />
+
+		<ul class="navigation grid-50">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Amenities</a></li>
+			<li><a href="#">Pricing</a></li>
+			<li><a href="#">Location</a></li>
+			<li><a href="#">Contact Us</a></li>
+		</ul>
+
+
+
+			height: 700px;
+	background-image: url(../images/cannongrass2.jpg);
+	background-size: 100% auto;
+	background-position: center center;
+	background-repeat: no-repeat;
+	clear: both;

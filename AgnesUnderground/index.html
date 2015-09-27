@@ -1,35 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<title></title>
+	<title>Agnes Underground</title>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,400italic,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/reset.css" type="text/css" />
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
 
 <body>
+<div class="grid-container">
 	<header>
-		<ul>
-			<li>Home</li>
-			<li>Amenities</li>
-			<li>Pricing</li>
-			<li>Location</li>
-			<li>Contact Us</li>
+		<div class="logo">
+			<img src="images/agnes_underground_400x400.gif" width="80" height="80">
+		</div>
+		<ul class="navigation">
+			<li><a href="#">HOME</a></li>
+			<li><a href="#">THE SPACE</a></li>
+			<li><a href="#">PRICING</a></li>
+			<li><a href="#">LOCATION</a></li>
+			<li><a class="last" href="#">CONTACT US</a></li>
 		</ul>
 	</header>
-	<section class="hero">
-		<p>Agnes Underground</p>
+	<section class="hero flex">
+		<div class="wrapper">
+			<div class="blurb">
+				<h1>AGNES UNDERGROUND</h1>
+				<p>A Seattle workspace for entrepreneurs, start-ups, freelancers & profressionals.</p>
+			</div>
+		</div>
+		<div class="wrapper">
+			<a class="button" href="#">
+				<div class="tour-cta">BOOK A TOUR</div>
+			</a>
+		</div>
 	</section>
-	<section class="Amenities">
-		<p>stuff at AU</p>
+	<section class="amenities flex">
+		<div class="wrapper">
+			<div class="space">
+				<aside><p class="intro-blurb">Private phone booths & conference rooms:</p> for your top secret meetings</p></aside>
+			</div>
+		</div>
 	</section>
-	<section class="Pricing">
-		<p>Flex desk $100</p>
-		<p>Fixed desk $160</p>
+	<section class="pricing flex pic">
+		<div class="wrapper">
+			<aside class="full-time">
+				<h2>Full time</h2>
+				<h3>Desk & chair</h3>
+				<p class="price">$325/mo.</p>
+				<p>24/7 access to a dedicatated desk & a personal filing cabinet</p>
+				<a href="#">
+					<div class="cta">
+						GET STARTED
+					</div>
+				</a>
+			</aside>
+			<aside class="part-time">
+				<h2>Flex desk</h2>
+				<h3>Flexible membership</h3>
+				<p class="price">$174/mo.</p>
+				<p>Full access to amenities & shared work spaces</p>
+				<p>7AM to 12AM</p>
+				<a href="#">
+					<div class="cta">
+						GET STARTED
+					</div>
+				</a>
+			</aside>
+			<aside class="daypass">
+				<h2>Day pass</h2>
+				<h3>For visitors & jetsetters</h3>
+				<p class="price">$25/day</p>
+				<p>Full access to amenities & shared work spaces</p>
+				<p>9:30AM to 6PM</p>
+				<a href="#">
+					<div class="cta">
+						GET STARTED
+					</div>
+				</a>
+			</aside>
+		</div>
 	</section>
-	<section class="Location">
-		<p>Address</p>
+	<section class="location flex">
+		<div class="wrapper">
+			<h2>Address</h2>
+			<p>1433 12th Ave Suite A1</p>
+			<p>Seattle, WA 98122</p>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.627133343867!2d-122.31709009999997!3d47.61393950000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906acc2cd6d3d1%3A0x93577be0a2020b98!2sAgnes+Underground!5e0!3m2!1sen!2sus!4v1443230462825" width="960" height="400" frameborder="0" style="border:0" allowfullscreen></iframe> 
+		</div>
 	</section>
-	<section class="Contact Us">
-		<p>888.888.8888</p>
+	<section class="contact flex">
+		<div class="wrapper">
+			<p>888.888.8888</p>
+		</div>
 	</section>
 	<footer>
 		<p>&copy Agnes Underground</p>
@@ -41,6 +103,7 @@
 
 
 
+</div> <!-- end "grid-container" --> 
 
 </body>
 
