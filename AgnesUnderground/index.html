@@ -1,31 +1,40 @@
 <!DOCTYPE html>
+
 <html>
 <head>
 	<title>Agnes Underground</title>
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,400italic,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/reset.css" type="text/css" />
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="css/slick.css" />
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+	
 </head>
 
 <body>
-<div class="grid-container">
-	<header>
+<div class="container">
+	<header class="clearfix">
 		<div class="logo">
 			<img src="images/agnes_underground_400x400.gif" width="80" height="80">
 		</div>
-		<ul class="navigation">
-			<li><a href="#">HOME</a></li>
-			<li><a href="#">THE SPACE</a></li>
-			<li><a href="#">PRICING</a></li>
-			<li><a href="#">LOCATION</a></li>
-			<li><a class="last" href="#">CONTACT US</a></li>
-		</ul>
+		<nav>
+			<ul class="navigation">
+				<li><a id="home-button" href="#">HOME</a></li>
+				<li><a id="thespace-button" href="#">THE SPACE</a></li>
+				<li><a id="memberships-button" href="#">MEMBERSHIPS</a></li>
+				<li><a id="location-button" href="#">LOCATION</a></li>
+				<li><a class="last" href="#">CONTACT US</a></li>
+			</ul>
+		</nav>
+		<a href="#mobile-footer" class="hamburger-link">
+			<div class="hamburger"></div>
+		</a>
 	</header>
-	<section class="hero flex">
+	<section id="home" class="hero flex">
 		<div class="wrapper">
 			<div class="blurb">
 				<h1>AGNES UNDERGROUND</h1>
-				<p>A Seattle workspace for entrepreneurs, start-ups, freelancers & profressionals.</p>
+				<p>A Seattle workspace for entrepreneurs, startups, freelancers & profressionals.</p>
 			</div>
 		</div>
 		<div class="wrapper">
@@ -34,23 +43,53 @@
 			</a>
 		</div>
 	</section>
-	<section class="amenities flex">
+	<section id="thespace" class="about flex">
 		<div class="wrapper">
-			<div class="space">
-				<aside><p class="intro-blurb">Private phone booths & conference rooms:</p> for your top secret meetings</p></aside>
-			</div>
+				<h2 class="heading">About our space</h2>
+				<h3>Get your work done, keep your team happy, and find clients, vendors, partners, and friends.</h3>
+				<p>The space includes 16 fixed desks, ample seating for flex desk members, a roomy 10 person conference room, and three private phone rooms. We also have a kitchen, dining space, lounge seating, an outdoor courtyard, and free coffee!</p>
+				<p>We are located in Capitol Hill, with over 20 restaurants, shops, and cafes just steps away.</p>
 		</div>
 	</section>
-	<section class="pricing flex pic">
+
+	<div class="autoplay">
+		<section id="red" class="amenities booth flex">
+			<div class="wrapper clearfix">
+				<div class="space">
+					<aside><p class="intro-blurb">Private phone booths & conference rooms:</p>for your top secret meetings</p></aside>
+				</div>
+			</div>
+		</section>
+		<section id="green" class="amenities kitchen flex">
+			<div class="wrapper">
+				<div class="space">
+					<aside><p class="intro-blurb">Kitchen stacked with unlimited coffee:</p>for your daily caffine fix</p></aside>
+				</div>
+			</div>
+		</section>
+		<section id="blue" class="amenities restaurant flex">
+			<div class="wrapper">
+				<div class="space">
+					<aside><p class="intro-blurb">10+ restaurants and cafes a few steps away:</p> for your extended lunch meetings</p></aside>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<section id="memberships" class="pricing flex pic">
 		<div class="wrapper">
+			<h2 class="heading">Memberships</h2>
 			<aside class="full-time">
-				<h2>Full time</h2>
-				<h3>Desk & chair</h3>
-				<p class="price">$325/mo.</p>
-				<p>24/7 access to a dedicatated desk & a personal filing cabinet</p>
-				<a href="#">
+				
+					<h2>Full time</h2>
+					<!-- <h3>Desk & chair</h3> -->
+					<!-- <p class="price">$325/mo.</p> -->
+					<p>24/7 access to a dedicatated desk & a personal filing cabinet</p>
+
+				<a>
 					<div class="cta">
-						GET STARTED
+						<span>Get started for</span>
+						<h1>$375/month</h1>
 					</div>
 				</a>
 			</aside>
@@ -60,7 +99,7 @@
 				<p class="price">$174/mo.</p>
 				<p>Full access to amenities & shared work spaces</p>
 				<p>7AM to 12AM</p>
-				<a href="#">
+				<a>
 					<div class="cta">
 						GET STARTED
 					</div>
@@ -72,7 +111,7 @@
 				<p class="price">$25/day</p>
 				<p>Full access to amenities & shared work spaces</p>
 				<p>9:30AM to 6PM</p>
-				<a href="#">
+				<a>
 					<div class="cta">
 						GET STARTED
 					</div>
@@ -80,22 +119,70 @@
 			</aside>
 		</div>
 	</section>
-	<section class="location flex">
+
+
+
+	<section id="test" class="signup-form flex clearfix">
+		<div class="wrapper" id="form">
+			<div class="signup-form-1">
+				<form>
+					<h2>Fill out the form to sign up!</h2>	
+					<select class="membership-select">
+						<option class="full-select">Full Time</option>
+						<option class="flex-select">Flex Desk</option>
+						<option class="day-select">Day Pass</option>
+					</select>
+
+					<!-- <label class="mainLabel" for="nameField">Name</label> -->
+
+					<input id="nameField" class="mainInput required" type="text" placeholder="Full Name"></input>
+					
+					<div class="left-column">
+					<input id="emailField" class="mainInput required" type="email" placeholder="Email"></input>
+					</div>
+					
+					<div class="right-column">
+					<input id="phoneField" class="mainInput" type="phone" placeholder="Phone"></input>
+					</div>
+					
+					<input id="companyField" class="mainInput" type="text" placeholder="Company"></input>
+				
+					<input id="businessField" class="mainInput" type="text" placeholder="Business Needs (ex. I need a 4 person table)"></input>
+					
+					<div class="continue">
+						<input class="continue" type="button" value="Continue to payment" />	
+					</div>
+				</form>
+				
+			</div>
+		</div>
+	</section>
+	
+
+
+	<section id="map" class="location flex">
 		<div class="wrapper">
-			<h2>Address</h2>
+			<h2 class="heading">Location</h2>
 			<p>1433 12th Ave Suite A1</p>
 			<p>Seattle, WA 98122</p>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.627133343867!2d-122.31709009999997!3d47.61393950000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906acc2cd6d3d1%3A0x93577be0a2020b98!2sAgnes+Underground!5e0!3m2!1sen!2sus!4v1443230462825" width="960" height="400" frameborder="0" style="border:0" allowfullscreen></iframe> 
+			<p>(206) 739-9004</p>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.627133343867!2d-122.31709009999997!3d47.61393950000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906acc2cd6d3d1%3A0x93577be0a2020b98!2sAgnes+Underground!5e0!3m2!1sen!2sus!4v1443230462825" width="960" height="325" frameborder="0" style="border:0" allowfullscreen></iframe> 
 		</div>
 	</section>
-	<section class="contact flex">
+	<section class="foot flex">
 		<div class="wrapper">
-			<p>888.888.8888</p>
+			<footer>
+				<ul id="mobile-footer" class="flex">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">The Space</a></li>			
+					<li><a href="#">Pricing</a></li>
+					<li><a href="#">Location</a></li>			
+					<li><a href="#">Contact Us</a></li>			
+				</ul>
+				<p>&copy Agnes Underground</p>
+			</footer>
 		</div>
 	</section>
-	<footer>
-		<p>&copy Agnes Underground</p>
-	</footer>
 
 
 
@@ -103,8 +190,13 @@
 
 
 
-</div> <!-- end "grid-container" --> 
+</div> <!-- end container --> 
 
+<script type="text/javascript" src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 
 

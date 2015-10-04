@@ -16,3 +16,60 @@
 	background-position: center center;
 	background-repeat: no-repeat;
 	clear: both;
+
+
+
+
+/*@media screen and (max-width: 768px) {
+	body{
+		font-size: 14px;
+	}
+	aside.full-time,
+	aside.part-time,
+	aside.daypass {
+		width:94%;
+		box-shadow: none;
+	}
+	nav{
+		font-size: 12px;
+		display: none;
+	}
+	.hamburger-link {
+		cursor: pointer;
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		top: 25px;
+		right: 25px;
+	}
+	.hamburger,
+	.hamburger::after,
+	.hamburger::before {
+		content: '';
+		position: absolute;
+		border-top: 5px solid #992222;
+		width: 30px;
+		right: 0;
+	}
+	.hamburger::after {
+		top: -10px;
+	}
+	.hamburger::before {
+		top: 6px;
+	}
+	#mobile-footer {
+		display: block;
+	}
+	#mobile-footer a {
+		text-decoration: none;
+		color: #fff;
+		padding: 10px;
+		display: block;
+		border-bottom: 1px solid #444
+	}
+
+
+
+
+
+}*/
